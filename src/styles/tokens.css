@@ -1,0 +1,137 @@
+/* Tokens del HQ de GuateGeeks. Fuente única de color, espacio, radio y movimiento. */
+
+:root {
+  /* Marca GuateGeeks */
+  --gg-coral: #ef8556;
+  --gg-coral-dark: #a34825;
+  --gg-sky: #5fbad6;
+  --gg-plum: #685599;
+  --gg-teal: #3f9d8f;
+
+  /* Superficies y texto (claro) */
+  --bg: #f6f4f2;
+  --surface: #ffffff;
+  --surface-2: #f0ece9;
+  --border: #e1dbd6;
+  --text: #1d1a22;
+  --muted: #5f5966;
+  --link: var(--gg-coral-dark);
+
+  /* Acción principal: coral con tinta oscura (contraste AA) */
+  --action: var(--gg-coral);
+  --on-action: #2a140b;
+  --focus: #1d1a22;
+
+  /* Estados */
+  --ok: #2f7d5b;
+  --warn: #9a6a00;
+  --danger: #b3342b;
+  --ok-bg: #e3f3ea;
+  --warn-bg: #fbf0d4;
+  --danger-bg: #fbe4e1;
+
+  /* Tipografía */
+  --font-display: "DM Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Espacio (base 8) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* Radios */
+  --r-sm: 8px;
+  --r-md: 16px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  /* Elevación (solo en el dock y al pasar el cursor) */
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.06);
+  --shadow-2: 0 10px 30px -12px rgb(40 20 60 / 0.35);
+
+  /* Movimiento: 100–160 ms respuesta, 240 ms cambio de vista, 400 ms énfasis */
+  --dur-fast: 140ms;
+  --dur-base: 240ms;
+  --dur-slow: 400ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Layout */
+  --dock-h: 76px;
+  --content-max: 1120px;
+  --tap-min: 44px;
+}
+
+/* Tema oscuro: se aplica con data-theme="dark" o, si es "system", según el sistema. */
+:root[data-theme="dark"] {
+  --bg: #15131a;
+  --surface: #1e1b25;
+  --surface-2: #27232f;
+  --border: #352f40;
+  --text: #f3f0f6;
+  --muted: #b0a9bb;
+  --link: #f4a47e;
+  --focus: #ffffff;
+  --ok: #6fd1a3;
+  --warn: #f0c35a;
+  --danger: #ff948a;
+  --ok-bg: #173126;
+  --warn-bg: #352b10;
+  --danger-bg: #3a1c19;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-2: 0 14px 34px -12px rgb(0 0 0 / 0.7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    --bg: #15131a;
+    --surface: #1e1b25;
+    --surface-2: #27232f;
+    --border: #352f40;
+    --text: #f3f0f6;
+    --muted: #b0a9bb;
+    --link: #f4a47e;
+    --focus: #ffffff;
+    --ok: #6fd1a3;
+    --warn: #f0c35a;
+    --danger: #ff948a;
+    --ok-bg: #173126;
+    --warn-bg: #352b10;
+    --danger-bg: #3a1c19;
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-2: 0 14px 34px -12px rgb(0 0 0 / 0.7);
+  }
+}
+
+/* Acento por proyecto. `--accent-deep` sostiene texto blanco (≥ 4.5:1). */
+[data-accent="plum"] {
+  --accent: #685599;
+  --accent-deep: #3f3366;
+  --accent-soft: #b7a9e0;
+}
+[data-accent="sky"] {
+  --accent: #5fbad6;
+  --accent-deep: #1f5d74;
+  --accent-soft: #bfe6f2;
+}
+[data-accent="coral"] {
+  --accent: #ef8556;
+  --accent-deep: #8e3c1d;
+  --accent-soft: #f9c9b0;
+}
+[data-accent="teal"] {
+  --accent: #3f9d8f;
+  --accent-deep: #1b564d;
+  --accent-soft: #a9dcd3;
+}
+[data-accent="brand"] {
+  --accent: #ef8556;
+  --accent-deep: #3f3366;
+  --accent-soft: #5fbad6;
+}
