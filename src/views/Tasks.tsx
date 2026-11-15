@@ -2,19 +2,21 @@ import { useState } from "react";
 import { Banner } from "../components/Banner";
 import { OriginChip, projectById, ProjectChip } from "../components/Chips";
 import { EmptyState } from "../components/States";
-import { StageChip } from "../components/StageChip";
+import { AUDIENCES, AudienceChip, StageChip } from "../components/StageChip";
 import { relativeTime } from "../data/format";
 import { useWorkspace } from "../data/store";
-import type { ProjectId } from "../data/types";
+import type { Audience, ProjectId } from "../data/types";
 
 export function TasksView() {
   const { workspace, tasks, toggleTask } = useWorkspace();
   const [filter, setFilter] = useState<ProjectId | "todos">("todos");
+  const [audience, setAudience] = useState<Audience | "todos">("todos");
   const [kind, setKind] = useState<"todas" | "tareas" | "mejoras">("todas");
   if (!workspace) return null;
 
   const visible = tasks
     .filter((t) => filter === "todos" || t.projectId === filter)
+    .filter((t) => audience === "todos" || t.audience === audience)
     .filter((t) => kind === "todas" || (kind === "mejoras") === !!t.improvement);
   const open = visible.filter((t) => !t.done);
   const done = visible.filter((t) => t.done);
@@ -40,6 +42,7 @@ export function TasksView() {
       </label>
       <span style={{ display: "flex", gap: 8, flexWrap: "wrap", justifyContent: "flex-end" }}>
         {t.improvement && <StageChip stage={t.improvement.stage} />}
+        <AudienceChip audience={t.audience} />
         <ProjectChip project={projectById(workspace.projects, t.projectId)} />
         {!t.improvement && <OriginChip origin={t.origin} />}
       </span>
@@ -54,6 +57,17 @@ export function TasksView() {
         {(["todas", "tareas", "mejoras"] as const).map((k) => (
           <button key={k} type="button" aria-pressed={kind === k} onClick={() => setKind(k)}>
             {k === "todas" ? "Tareas y mejoras" : k === "tareas" ? "Solo tareas" : "Solo mejoras"}
+          </button>
+        ))}
+      </div>
+
+      <div className="filter-row" role="group" aria-label="Filtrar por experiencia">
+        <button type="button" aria-pressed={audience === "todos"} onClick={() => setAudience("todos")}>
+          Docente y estudiante
+        </button>
+        {AUDIENCES.map((a) => (
+          <button key={a.key} type="button" aria-pressed={audience === a.key} title={a.hint} onClick={() => setAudience(a.key)}>
+            {a.label}
           </button>
         ))}
       </div>

@@ -904,3 +904,17 @@
   border-radius: 50%;
   border: 2px dashed var(--border);
 }
+
+/* Para quién es: docente (ciruela) o estudiante (cielo). Mezcla con la superficie para servir en claro y oscuro. */
+.chip--audience {
+  color: var(--text);
+  font-weight: 600;
+}
+.chip--docente {
+  background: color-mix(in srgb, var(--gg-plum) 18%, var(--surface));
+  border-color: color-mix(in srgb, var(--gg-plum) 55%, transparent);
+}
+.chip--estudiante {
+  background: color-mix(in srgb, var(--gg-sky) 22%, var(--surface));
+  border-color: color-mix(in srgb, var(--gg-sky) 65%, transparent);
+}

@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Banner } from "../components/Banner";
 import { projectById, ProjectChip } from "../components/Chips";
 import { EmptyState } from "../components/States";
-import { STAGES, stageOf } from "../components/StageChip";
+import { AUDIENCES, AudienceChip, STAGES, stageOf } from "../components/StageChip";
 import { useWorkspace } from "../data/store";
-import type { Improvement, ImprovementStage, ProjectId } from "../data/types";
+import type { Audience, Improvement, ImprovementStage, ProjectId } from "../data/types";
 
 /**
  * Buzón de mejoras futuras, leído de `vault/mejoras/`. Solo lectura: el estado, el «trabajado»
@@ -14,11 +14,14 @@ import type { Improvement, ImprovementStage, ProjectId } from "../data/types";
 export function ImprovementsView() {
   const { workspace } = useWorkspace();
   const [project, setProject] = useState<ProjectId | "todos">("todos");
+  const [audience, setAudience] = useState<Audience | "todos">("todos");
   const [stage, setStage] = useState<ImprovementStage | "todas">("todas");
   if (!workspace) return null;
 
   const everything = workspace.improvements ?? [];
-  const inProject = everything.filter((i) => project === "todos" || i.projectId === project);
+  const inProject = everything
+    .filter((i) => project === "todos" || i.projectId === project)
+    .filter((i) => audience === "todos" || i.audience === audience);
   const shown = inProject.filter((i) => stage === "todas" || i.stage === stage);
   const withItems = workspace.projects.filter((p) => everything.some((i) => i.projectId === p.id));
   const count = (key: ImprovementStage) => inProject.filter((i) => i.stage === key).length;
@@ -82,6 +85,7 @@ export function ImprovementsView() {
           </p>
         )}
         <div className="entry__tags">
+          <AudienceChip audience={item.audience} />
           {item.projectId && <ProjectChip project={projectById(workspace.projects, item.projectId)} />}
           <span className="chip">{item.by}</span>
           {item.date && <span className="notice">{item.date}</span>}
@@ -101,6 +105,17 @@ export function ImprovementsView() {
         {STAGES.map((s) => (
           <button key={s.key} type="button" aria-pressed={stage === s.key} title={s.hint} onClick={() => setStage(s.key)}>
             {s.label} ({count(s.key)})
+          </button>
+        ))}
+      </div>
+
+      <div className="filter-row" role="group" aria-label="Filtrar por experiencia">
+        <button type="button" aria-pressed={audience === "todos"} onClick={() => setAudience("todos")}>
+          Docente y estudiante
+        </button>
+        {AUDIENCES.map((a) => (
+          <button key={a.key} type="button" aria-pressed={audience === a.key} title={a.hint} onClick={() => setAudience(a.key)}>
+            {a.label}
           </button>
         ))}
       </div>

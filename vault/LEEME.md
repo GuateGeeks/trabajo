@@ -44,4 +44,6 @@ Cada mejora de `mejoras/` lleva un identificador en negrita (`S-04` Sócrates, `
 
 Opcional: `  - rama: mejora/S-04-ingreso`.
 
+**Para quién es:** además del proyecto (`#socrates`), cada mejora lleva `#docente` o `#estudiante` en la misma línea, para saber a qué experiencia responde. Código `E-` = estudiante, `S-` = docente en Sócrates. En Tareas y Mejoras se puede filtrar por esa etiqueta.
+
 **Regla: no se hace commit de una mejora sin su línea `aprobado:`.** Si una mejora aparece como hecha o con commit sin aprobación, el panel muestra una advertencia.

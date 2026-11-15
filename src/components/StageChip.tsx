@@ -1,4 +1,4 @@
-import type { ImprovementStage } from "../data/types";
+import type { Audience, ImprovementStage } from "../data/types";
 
 export const STAGES: { key: ImprovementStage; label: string; hint: string; chip: string }[] = [
   { key: "por-hacer", label: "Por hacer", hint: "Sin trabajo todavía", chip: "" },
@@ -15,6 +15,21 @@ export function StageChip({ stage }: { stage: ImprovementStage }) {
   return (
     <span className={`chip ${s.chip}`} title={s.hint}>
       {s.label}
+    </span>
+  );
+}
+
+export const AUDIENCES: { key: Audience; label: string; hint: string }[] = [
+  { key: "docente", label: "Docente", hint: "Experiencia del docente y del equipo escolar" },
+  { key: "estudiante", label: "Estudiante", hint: "Experiencia del estudiante" },
+];
+
+export function AudienceChip({ audience }: { audience: Audience | null | undefined }) {
+  const a = AUDIENCES.find((x) => x.key === audience);
+  if (!a) return null;
+  return (
+    <span className={`chip chip--audience chip--${a.key}`} title={a.hint}>
+      {a.label}
     </span>
   );
 }

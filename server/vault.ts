@@ -354,12 +354,15 @@ export function readVault(root: string): VaultResult {
         let body = parts.length >= 3 ? parts.slice(0, -2).join(" · ") : m[2];
         const code = body.match(/^\*\*([A-Z]+-\d+)\*\*\s+/)?.[1] ?? null;
         if (code) body = body.replace(/^\*\*[A-Z]+-\d+\*\*\s+/, "");
-        const tag = body.match(/#([\w-]+)/)?.[1];
+        const tags = [...body.matchAll(/#([\w-]+)/g)].map((t) => t[1]);
+        const tag = tags.find((t) => isProjectId(t));
+        const audience = tags.includes("docente") ? "docente" : tags.includes("estudiante") ? "estudiante" : null;
         last = {
           id: `mej:${slug(baseName(file))}:${index}`,
           text: body.replace(/\s*#[\w-]+/g, "").trim(),
           done: m[1].toLowerCase() === "x",
           projectId: tag && isProjectId(tag) ? tag : null,
+          audience,
           date,
           by,
           code,
@@ -404,6 +407,7 @@ export function readVault(root: string): VaultResult {
       done: item.stage === "hecha",
       origin: "humano",
       improvement: { code: item.code, stage: item.stage },
+      audience: item.audience,
     });
   }
 

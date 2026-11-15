@@ -64,6 +64,8 @@ export interface Project {
   repos?: RepoStatus[];
 }
 
+export type Audience = "docente" | "estudiante";
+
 export interface Task {
   id: string;
   projectId: ProjectId;
@@ -73,6 +75,8 @@ export interface Task {
   origin: Origin;
   /** Si viene de `vault/mejoras/`, su identificador y estado (se marcan a mano en la bóveda). */
   improvement?: { code: string | null; stage: ImprovementStage };
+  /** Para quién es: la experiencia del docente o la del estudiante (solo mejoras). */
+  audience?: Audience | null;
 }
 
 export type Risk = "bajo" | "medio" | "alto";
@@ -123,6 +127,8 @@ export interface Improvement {
   text: string;
   done: boolean;
   projectId: ProjectId | null;
+  /** Etiqueta `#docente` o `#estudiante` de la línea. */
+  audience: Audience | null;
   date: string | null;
   by: string;
   /** Identificador, por ejemplo `S-04`. */
