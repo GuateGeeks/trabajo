@@ -1,0 +1,2 @@
+- [ ] Joaquín: revisar el lote 1 en https://socrates-pruebas.web.app y marcar `aprobado:` en S-01, S-02, S-04 y S-06 📅 2026-11-18 #maquina
+- [ ] Joaquín: responder las 13 preguntas de la propuesta «Sócrates · decisiones para seguir con las mejoras del 14-11» 📅 2026-11-18 #maquina
