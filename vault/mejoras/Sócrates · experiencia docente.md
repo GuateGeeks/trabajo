@@ -5,9 +5,13 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 ## Navegación del docente
 
 - [ ] **S-01** Quitar del espacio del docente el enlace «Construcciones»: no corresponde a su experiencia #socrates #docente · 2026-11-14 · Joaquín
+  - trabajado: 2026-11-14 Claude
+  - rama: claude/lote-1-docente
   - Hoy está en la barra superior del espacio escolar (`src/school/SchoolApp.tsx`, línea 87), junto al botón de tema.
   - Su pantalla de origen es la galería de modelos y manuales; en el estudiante se llega desde Materias.
 - [ ] **S-02** Quitar del espacio del docente el enlace «← Mi aprendizaje»: es del estudiante y no va en el docente #socrates #docente · 2026-11-14 · Joaquín
+  - trabajado: 2026-11-14 Claude
+  - rama: claude/lote-1-docente
   - Hoy está en esa misma barra superior (`src/school/SchoolApp.tsx`, línea 87) y solo aparece fuera del modo demostración.
   - Al quitarlo, revisar qué otro camino de regreso necesita el docente (hoy el aviso «Abriendo Mi aprendizaje…» y «Volver a Mi aprendizaje» también viven en ese archivo).
 
@@ -15,10 +19,14 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 
 - [ ] **S-03** Hacer más sobria la experiencia visual del ingreso docente #socrates #docente · 2026-11-14 · Joaquín
 - [ ] **S-04** Quitar los enlaces redundantes del ingreso docente: el docente entra con correo y contraseña, nunca con código de clase #socrates #docente · 2026-11-14 · Joaquín
+  - trabajado: 2026-11-14 Claude
+  - rama: claude/lote-1-docente
   - Eliminar «Ya tengo mi código · Tengo un código de clase · Volver a elegir».
   - Eliminar «Ya tengo mi código · Tengo un código de clase».
 - [ ] **S-05** Rediseñar por completo la distribución de botones y campos de iniciar sesión, crear cuenta y recuperar contraseña #socrates #docente · 2026-11-14 · Joaquín
 - [ ] **S-06** Quitar la pantalla intermedia entre el login y la plataforma del docente: hoy aparece otra imagen y espera de 1 a 3 segundos; el paso debe ser directo y no perceptible #socrates #docente · 2026-11-14 · Joaquín
+  - estado: en curso
+  - rama: claude/lote-1-docente
 
 ## Clases y materias
 
