@@ -5,12 +5,12 @@ creada: 2026-11-15
 riesgo: medio
 ---
 
-Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) ya se puede revisar en el ambiente de pruebas, y para seguir con los demás lotes hacen falta 13 decisiones tuyas. Responde debajo de cada pregunta (una línea basta) y, si el lote 1 te convence, agrega `aprobado:` a cada mejora en `mejoras/Sócrates · experiencia docente.md`.
+Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S-16, evaluaciones que no llegaban) ya se pueden revisar en el ambiente de pruebas, y para seguir con los demás lotes hacen falta 13 decisiones tuyas. Responde debajo de cada pregunta (una línea basta) y, si un lote te convence, agrega `aprobado:` a cada mejora en `mejoras/Sócrates · experiencia docente.md`.
 
 ## Cómo revisar
 
 - Sitio: https://socrates-pruebas.web.app. Es un Sócrates aparte, con una escuela ficticia («Escuela de Pruebas Sócrates»): nada de lo que hagas ahí toca a la escuela real.
-- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/lote-1-docente` (lote 1 sobre `main`).
+- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/lotes-1-2` (lotes 1 y 2 sobre `main`).
 - Como docente: en «Soy docente o parte del equipo escolar», «Recuperar contraseña» con tu correo agregando `+docente` antes de la @ (y `+coordinacion` para coordinación). Llega un enlace para definir la contraseña.
 - Como estudiante: «Entrar con mi código». Los códigos de los 20 estudiantes ficticios te los pasa Alvin por mensaje (no van en este repositorio, que es público).
 - La ayuda de Geeky no está disponible en pruebas.
@@ -22,7 +22,17 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) ya se puede re
 - **S-04:** el ingreso del personal solo pide correo y contraseña. Queda un «Volver» para regresar a elegir rol.
 - **S-06:** al entrar ya no aparecen el panel de cuenta ni la imagen del planeta. La espera de 1 a 3 segundos sigue (ver pregunta 10 y lote 8).
 
-## Preguntas
+## Lote 2 · qué revisar (S-16)
+
+La causa: quien entró con código cuando su clase aún no tenía secciones quedó sin sección. Al agregar secciones y publicar para todas, esos estudiantes quedaban fuera sin aviso y la tarjeta decía «0 estudiantes».
+
+Para comprobarlo en pruebas (Sexto A no tiene secciones, como en ese caso):
+
+1. Con la cuenta +docente, en «Tus clases» abre Sexto A y en «Secciones» agrega A y B. Guarda.
+2. En Evaluaciones crea una evaluación para Sexto A, deja marcadas las dos secciones y publícala. La tarjeta debe decir 10 estudiantes.
+3. Entra como estudiante con un código de Sexto A: la evaluación debe aparecer.
+4. Si publicas en una clase sin estudiantes, ahora aparece un aviso en vez de publicarse para nadie.
+
 
 1. **S-02/S-04 · Salida del ingreso:** sin «Mi aprendizaje» ni «Volver a elegir», dejé un único «Volver» en el ingreso del personal. ¿Se queda o no debe haber salida? ¿Aplica igual a coordinación, dirección y familias, que comparten ese ingreso?
 2. **S-04 · Enlaces del estudiante:** los enlaces del estudiante que llevaban al formulario de correo ahora abren «Entrar con mi código». ¿Correcto?

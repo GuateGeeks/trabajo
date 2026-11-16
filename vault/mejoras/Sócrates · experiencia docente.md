@@ -72,8 +72,9 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
   - El docente selecciona campos y formatos de pregunta como en Google Forms.
   - Mantener la disponibilidad de horario para aplicarla, y la clase y la materia.
 - [ ] **S-16** Error: la evaluación aplicada debe verse reflejada en los estudiantes asociados a la clase; hoy no ocurre #socrates #docente · 2026-11-14 · Joaquín
-  - estado: en curso
+  - trabajado: 2026-11-15 Claude
   - rama: claude/lote-2-evaluaciones
+  - Revisar en pruebas: pasos en la propuesta «Sócrates · decisiones para seguir con las mejoras del 14-11», sección Lote 2.
   - Causa encontrada y reproducida: quien entró con código cuando la clase no tenía secciones queda sin sección; al agregar secciones y publicar para todas, esos estudiantes quedaban fuera sin aviso (la tarjeta decía 0 estudiantes).
   - Arreglado en socrates.app PR #38: publicar para todas las secciones llega a toda la clase, y una publicación sin destinatarios se rechaza con un mensaje.
   - Falta decidir (pregunta 5 de la propuesta): si quien se une tarde por otra vía recibe las evaluaciones abiertas, y una forma de asignar sección a un estudiante.
