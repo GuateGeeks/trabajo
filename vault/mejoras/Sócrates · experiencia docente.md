@@ -4,16 +4,18 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 
 ## Navegación del docente
 
-- [ ] **S-01** Quitar del espacio del docente el enlace «Construcciones»: no corresponde a su experiencia #socrates #docente · 2026-11-14 · Joaquín
+- [x] **S-01** Quitar del espacio del docente el enlace «Construcciones»: no corresponde a su experiencia #socrates #docente · 2026-11-14 · Joaquín
   - trabajado: 2026-11-14 Claude
   - aprobado: 2026-11-16 Joaquín
+  - commit: 35aca60 (producción 16-11)
   - rama: claude/lote-1-docente
   - Hoy está en la barra superior del espacio escolar (`src/school/SchoolApp.tsx`, línea 87), junto al botón de tema.
   - Su pantalla de origen es la galería de modelos y manuales; en el estudiante se llega desde Materias.
   - Revisar en pruebas (https://socrates-pruebas.web.app, cuenta +docente): la barra superior del espacio docente ya no tiene «Construcciones». La galería sigue disponible en Programas.
-- [ ] **S-02** Quitar del espacio del docente el enlace «← Mi aprendizaje»: es del estudiante y no va en el docente #socrates #docente · 2026-11-14 · Joaquín
+- [x] **S-02** Quitar del espacio del docente el enlace «← Mi aprendizaje»: es del estudiante y no va en el docente #socrates #docente · 2026-11-14 · Joaquín
   - trabajado: 2026-11-14 Claude
   - aprobado: 2026-11-16 Joaquín
+  - commit: 35aca60 (producción 16-11)
   - rama: claude/lote-1-docente
   - Hoy está en esa misma barra superior (`src/school/SchoolApp.tsx`, línea 87) y solo aparece fuera del modo demostración.
   - Al quitarlo, revisar qué otro camino de regreso necesita el docente (hoy el aviso «Abriendo Mi aprendizaje…» y «Volver a Mi aprendizaje» también viven en ese archivo).
@@ -22,9 +24,10 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 ## Ingreso
 
 - [ ] **S-03** Hacer más sobria la experiencia visual del ingreso docente #socrates #docente · 2026-11-14 · Joaquín
-- [ ] **S-04** Quitar los enlaces redundantes del ingreso docente: el docente entra con correo y contraseña, nunca con código de clase #socrates #docente · 2026-11-14 · Joaquín
+- [x] **S-04** Quitar los enlaces redundantes del ingreso docente: el docente entra con correo y contraseña, nunca con código de clase #socrates #docente · 2026-11-14 · Joaquín
   - trabajado: 2026-11-14 Claude
   - aprobado: 2026-11-16 Joaquín
+  - commit: 35aca60 (producción 16-11)
   - rama: claude/lote-1-docente
   - Eliminar «Ya tengo mi código · Tengo un código de clase · Volver a elegir».
   - Eliminar «Ya tengo mi código · Tengo un código de clase».
@@ -34,6 +37,7 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 - [ ] **S-06** Quitar la pantalla intermedia entre el login y la plataforma del docente: hoy aparece otra imagen y espera de 1 a 3 segundos; el paso debe ser directo y no perceptible #socrates #docente · 2026-11-14 · Joaquín
   - estado: en curso
   - aprobado: 2026-11-16 Joaquín (parte rápida)
+  - Parte rápida en producción el 16-11 (main 35aca60); la espera sigue en el lote 8.
   - rama: claude/lote-1-docente
   - Hecha la parte rápida: mientras carga ya no aparecen el panel de cuenta ni la imagen del planeta. La espera de 1 a 3 s sigue: el servidor carga espacios, clases y tablero en cadena; acortarla es el lote 8 (armazón con esqueletos y, si se acepta el costo, una instancia siempre encendida).
   - Revisar en pruebas: entrar con la cuenta +docente y mirar el paso del login al espacio docente.
@@ -78,6 +82,7 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 - [ ] **S-16** Error: la evaluación aplicada debe verse reflejada en los estudiantes asociados a la clase; hoy no ocurre #socrates #docente · 2026-11-14 · Joaquín
   - trabajado: 2026-11-15 Claude
   - aprobado: 2026-11-16 Joaquín
+  - Lo aprobado está en producción desde el 16-11 (main 35aca60). Queda abierto por lo decidido en la pregunta 5.
   - rama: claude/lote-2-evaluaciones
   - Revisar en pruebas: pasos en la propuesta «Sócrates · decisiones para seguir con las mejoras del 14-11», sección Lote 2.
   - Causa encontrada y reproducida: quien entró con código cuando la clase no tenía secciones queda sin sección; al agregar secciones y publicar para todas, esos estudiantes quedaban fuera sin aviso (la tarjeta decía 0 estudiantes).
