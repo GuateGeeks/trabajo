@@ -33,6 +33,7 @@ Para comprobarlo en pruebas (Sexto A no tiene secciones, como en ese caso):
 3. Entra como estudiante con un código de Sexto A: la evaluación debe aparecer.
 4. Si publicas en una clase sin estudiantes, ahora aparece un aviso en vez de publicarse para nadie.
 
+## Las 13 preguntas
 
 1. **S-02/S-04 · Salida del ingreso:** sin «Mi aprendizaje» ni «Volver a elegir», dejé un único «Volver» en el ingreso del personal. ¿Se queda o no debe haber salida? ¿Aplica igual a coordinación, dirección y familias, que comparten ese ingreso?
 2. **S-04 · Enlaces del estudiante:** los enlaces del estudiante que llevaban al formulario de correo ahora abren «Entrar con mi código». ¿Correcto?
