@@ -10,7 +10,7 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S
 ## Cómo revisar
 
 - Sitio: https://socrates-pruebas.web.app. Es un Sócrates aparte, con una escuela ficticia («Escuela de Pruebas Sócrates»): nada de lo que hagas ahí toca a la escuela real.
-- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/lotes-1-2` (lotes 1 y 2 sobre `main`).
+- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16` (S-16 ampliado sobre `main`, que ya tiene los lotes 1 y 2).
 - Como docente: en «Soy docente o parte del equipo escolar», «Recuperar contraseña» con tu correo agregando `+docente` antes de la @ (y `+coordinacion` para coordinación). Llega un enlace para definir la contraseña.
 - Como estudiante: «Entrar con mi código». Los códigos de los 20 estudiantes ficticios te los pasa Alvin por mensaje (no van en este repositorio, que es público).
 - La ayuda de Geeky no está disponible en pruebas.
@@ -22,16 +22,19 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S
 - **S-04:** el ingreso del personal solo pide correo y contraseña. Queda un «Volver» para regresar a elegir rol.
 - **S-06:** al entrar ya no aparecen el panel de cuenta ni la imagen del planeta. La espera de 1 a 3 segundos sigue (ver pregunta 10 y lote 8).
 
-## Lote 2 · qué revisar (S-16)
+## S-16 ampliado · qué revisar
 
-La causa: quien entró con código cuando su clase aún no tenía secciones quedó sin sección. Al agregar secciones y publicar para todas, esos estudiantes quedaban fuera sin aviso y la tarjeta decía «0 estudiantes».
+Lo de producción (17-11, solo lectura): no había secciones dentro de las clases. El 14-11 la evaluación **se guardó como borrador y nunca se publicó**; el 17-11 se publicó y llegó a los 7 estudiantes. Por eso, además de tus reglas de la pregunta 5, ahora un borrador dice claramente que nadie lo ve.
 
-Para comprobarlo en pruebas (Sexto A no tiene secciones, como en ese caso):
+La escuela de pruebas se reconstruyó el 17-11: Sexto A y Sexto B son dos clases, cada una con su sección. Los códigos de estudiante son los mismos.
 
-1. Con la cuenta +docente, en «Tus clases» abre Sexto A y en «Secciones» agrega A y B. Guarda.
-2. En Evaluaciones crea una evaluación para Sexto A, deja marcadas las dos secciones y publícala. La tarjeta debe decir 10 estudiantes.
-3. Entra como estudiante con un código de Sexto A: la evaluación debe aparecer.
-4. Si publicas en una clase sin estudiantes, ahora aparece un aviso en vez de publicarse para nadie.
+1. **Borrador:** con la cuenta +docente, en Evaluaciones guarda una evaluación sin publicar. La tarjeta dice «No publicada · Tus estudiantes todavía no la ven» y tiene «Publicar». Publícala desde ahí.
+2. **Llega a toda la clase:** entra con un código de Sexto A: la evaluación aparece. Ya no hay casillas de sección al publicar.
+3. **Grado y sección:** en «Tus clases», crea una clase de Primaria, Sexto, sección C: el nombre se propone solo («Sexto Primaria C»). Si intentas crear otra vez Sexto A, aparece «Ya existe Sexto Primaria A…».
+4. **Se ve en todas partes:** las clases muestran «Sexto Primaria · Sección A». En coordinación (+coordinacion) una clase se llama «clase», no «sección».
+5. **Quien entra tarde:** con la evaluación ya publicada, entra como estudiante nuevo con el código de clase de Sexto A (está en «Tus clases»): la evaluación abierta aparece. Lo mismo pasa si coordinación crea al estudiante.
+
+Si te convence, agrega `aprobado:` a S-16 en `mejoras/Sócrates · experiencia docente.md`. Detalle técnico: socrates.app PR #41.
 
 ## Las 13 preguntas
 
@@ -74,7 +77,7 @@ Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» 
 | Lote | Mejoras | Espera |
 |---|---|---|
 | 1 · Docente rápido | S-01, S-02, S-04, S-06 (parte rápida) | en producción 16-11 (S-06 solo parte rápida) |
-| 2 · Evaluaciones que no llegan | S-16 | en producción 16-11; sigue: estudiantes que entran tarde y sección obligatoria |
+| 2 · Evaluaciones que no llegan | S-16 | primera parte en producción 16-11; S-16 ampliado en pruebas (PR #41), espera tu revisión |
 | 3 · Estudiante: menos texto | E-02, E-04, E-06, E-16, E-18, E-19, E-20 | preguntas 3–4 |
 | 4 · Nombres de materias | S-07, E-12, E-13, E-23 | preguntas 6–7 |
 | 5 · Explorar | E-01, E-10, E-11, E-14, E-15, E-21 | lote 4 |

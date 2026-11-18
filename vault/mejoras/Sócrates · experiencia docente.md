@@ -88,3 +88,7 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
   - Causa encontrada y reproducida: quien entró con código cuando la clase no tenía secciones queda sin sección; al agregar secciones y publicar para todas, esos estudiantes quedaban fuera sin aviso (la tarjeta decía 0 estudiantes).
   - Arreglado en socrates.app PR #38: publicar para todas las secciones llega a toda la clase, y una publicación sin destinatarios se rechaza con un mensaje.
   - Decidido 16-11 (pregunta 5): quien se une tarde, por cualquier vía, recibe las evaluaciones abiertas; no puede haber estudiantes sin sección (todo estudiante está en un grado y una sección). Es trabajo nuevo sobre lo aprobado; sigue pendiente la autorización para leer en producción la clase donde pasó.
+  - trabajado: 2026-11-17 Claude (S-16 ampliado, rama claude/s16-grado-seccion, socrates.app PR #41; falta aprobado para esta parte)
+  - Lectura de producción del 17-11: el 14-11 la evaluación quedó como borrador sin publicar; no había secciones dentro de las clases.
+  - Hecho: clase = grado + sección (Sexto A es una clase), sin secciones dentro de una clase, quien entra tarde recibe lo abierto por cualquier vía, y los borradores dicen «No publicada · Tus estudiantes todavía no la ven».
+  - Revisar en pruebas: sección «S-16 ampliado» de la propuesta.
