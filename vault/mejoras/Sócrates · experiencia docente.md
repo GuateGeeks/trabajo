@@ -46,6 +46,9 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 
 - [ ] **S-07** Dejar de nombrar las materias con la nomenclatura del CNB: usar nombres claros y un nombre más comercial #socrates #docente · 2026-11-14 · Joaquín
   - Ejemplos: «Comunicación y Lenguaje L1»; L2 se llama «Inglés».
+  - trabajado: 2026-11-21 Claude
+  - rama: claude/lote-4-nombres (lote 4)
+  - Nombres: Idioma Materno, Segundo Idioma, Idioma Extranjero, Matemáticas, Ciencias Naturales, Ciencias Sociales, Arte, Educación Física, Productividad y Desarrollo, Formación Ciudadana, Medio Social y Natural (docente y estudiante).
 - [ ] **S-08** En Hoy, usar colores tenues por clase para distinguir cada grado y comunicar mejor #socrates #docente · 2026-11-14 · Joaquín
 
 ## Planificación

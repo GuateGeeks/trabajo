@@ -46,8 +46,14 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-12** Nombrar las materias con el lenguaje del colegio, no con el del CNB: Matemáticas, Inglés, Idioma, Ciencias Naturales… #socrates #estudiante · 2026-11-14 · Joaquín
   - «Segundo idioma» y «Tercer idioma» deben mostrar el idioma concreto si la institución lo tiene configurado.
   - Aplica a todo Sócrates del lado del estudiante.
+  - trabajado: 2026-11-21 Claude
+  - rama: claude/lote-4-nombres (lote 4)
+  - Nombres: Idioma Materno, Segundo Idioma, Idioma Extranjero, Matemáticas, Ciencias Naturales, Ciencias Sociales, Arte, Educación Física, Productividad y Desarrollo, Formación Ciudadana, Medio Social y Natural (docente y estudiante).
 - [ ] **E-13** Sustituir el indicador «0/160» por algo que un niño entienda, por ejemplo cuántas actividades lleva de las que tiene #socrates #estudiante · 2026-11-14 · Joaquín
   - Hoy no explica qué cuenta. Ser específicos: «5 por semana», «0 de 160 actividades».
+  - trabajado: 2026-11-21 Claude
+  - rama: claude/lote-4-nombres (lote 4)
+  - Materias dice «Llevas 3 de 160 temas» (y «· 4 temas por semana» fuera de una escuela).
 - [ ] **E-14** Presentar «Laboratorio de ideas» y «Construcciones» como accesos compactos o una sección de Laboratorios #socrates #estudiante · 2026-11-14 · Joaquín
   - Hoy parecen dos enlaces naranjas informativos entre el buscador y las materias.
   - Mantenerlos en Explorar, con jerarquía propia, sin competir con las materias.
@@ -76,5 +82,8 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-23** Quitar de todo el lado del estudiante la narrativa y nomenclatura del CNB #socrates #estudiante · 2026-11-14 · Joaquín
   - El CNB es la base, pero Sócrates debe poder escalar a otros países de Centroamérica; no debe percibirse limitado a Guatemala.
   - Comunicar con claridad cuál es la materia y la clase que le toca practicar, los ejercicios y lo asignado.
+  - trabajado: 2026-11-21 Claude
+  - rama: claude/lote-4-nombres (lote 4)
+  - Sin CNB, Guatemala, indicador, competencia ni «Tema generador» en lo que ve el estudiante (la atribución en Ajustes se queda). Pendiente: títulos de las 4 semanas de evaluación (s10, s20, s30, s40), que son lecciones publicadas.
 - [ ] **E-24** Eliminar todo texto descriptivo que no sea una clase o su contenido #socrates #estudiante · 2026-11-14 · Joaquín
   - Criterio de cierre: cada pantalla del estudiante responde solo a qué practicar, cuántos ejercicios y cómo va.
