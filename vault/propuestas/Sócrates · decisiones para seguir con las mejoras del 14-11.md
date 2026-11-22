@@ -10,7 +10,7 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S
 ## Cómo revisar
 
 - Sitio: https://socrates-pruebas.web.app. Es un Sócrates aparte, con una escuela ficticia («Escuela de Pruebas Sócrates»): nada de lo que hagas ahí toca a la escuela real.
-- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16` (S-16 ampliado sobre `main`, que ya tiene los lotes 1 y 2).
+- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16-lote-4` (S-16 ampliado y lote 4 sobre `main`, que ya tiene los lotes 1 y 2).
 - Como docente: en «Soy docente o parte del equipo escolar», «Recuperar contraseña» con tu correo agregando `+docente` antes de la @ (y `+coordinacion` para coordinación). Llega un enlace para definir la contraseña.
 - Como estudiante: «Entrar con mi código». Los códigos de los 20 estudiantes ficticios te los pasa Alvin por mensaje (no van en este repositorio, que es público).
 - La ayuda de Geeky no está disponible en pruebas.
@@ -35,6 +35,15 @@ La escuela de pruebas se reconstruyó el 17-11: Sexto A y Sexto B son dos clases
 5. **Quien entra tarde:** con la evaluación ya publicada, entra como estudiante nuevo con el código de clase de Sexto A (está en «Tus clases»): la evaluación abierta aparece. Lo mismo pasa si coordinación crea al estudiante.
 
 Si te convence, agrega `aprobado:` a S-16 en `mejoras/Sócrates · experiencia docente.md`. Detalle técnico: socrates.app PR #41.
+
+## Lote 4 · qué revisar (nombres de materias)
+
+1. **Nombres:** como estudiante (código) y como docente, las materias se llaman Idioma Materno, Segundo Idioma, Idioma Extranjero, Matemáticas, Ciencias Naturales, Ciencias Sociales, Arte, Educación Física, Productividad y Desarrollo, Formación Ciudadana y Medio Social y Natural.
+2. **Contador:** en Materias, cada materia dice «3 de 160 temas» y dentro de la materia «Llevas 3 de 160 temas».
+3. **Sin CNB:** en lo que ve el estudiante ya no aparecen «CNB», «Guatemala», «indicador», «competencia» ni «Tema generador». En su plan de clase dice «Meta», «Lo que practicarás» y «Contenido». La atribución del CNB sigue en Ajustes.
+4. **Pendiente:** las semanas de evaluación (10, 20, 30 y 40) todavía se titulan «Evaluación: Comunicación y Lenguaje», etc. Se cambian con el lote 3, porque son lecciones ya publicadas.
+
+Si te convence, agrega `aprobado:` a S-07, E-12, E-13 y E-23. Detalle técnico: socrates.app PR #42.
 
 ## Las 13 preguntas
 
