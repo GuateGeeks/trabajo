@@ -103,7 +103,7 @@ Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» 
 | 2 · Evaluaciones que no llegan | S-16 | primera parte en producción 16-11; S-16 ampliado en pruebas (PR #41), espera tu revisión |
 | 3 · Estudiante: menos texto | E-02, E-04, E-06, E-16, E-18, E-19, E-20 | preguntas 3–4 |
 | 4 · Nombres de materias | S-07, E-12, E-13, E-23 | trabajado 21-11 (rama claude/lote-4-nombres); espera tu revisión en pruebas |
-| 5 · Explorar | E-01, E-10, E-11, E-14, E-15, E-21 | lote 4 |
+| 5 · Explorar | E-01, E-10, E-11, E-14, E-15, E-21 (+ E-16) | trabajado 22-11 (PR #45); se publica en pruebas con el lote 11 |
 | 6 · Reproductor | E-07, E-08, E-09 | pregunta 8 |
 | 7 · Navegación del estudiante | E-03, E-17, E-22 | pregunta 9 |
 | 8 · Ingreso docente | S-03, S-05, S-06 (espera) | pregunta 10 |

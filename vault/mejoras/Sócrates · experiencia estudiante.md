@@ -9,6 +9,8 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-01** Mostrar en Inicio el estado de cada actividad con claridad: terminada, a medias o por empezar #socrates #estudiante · 2026-11-14 · Joaquín
   - Hoy el estudiante no recibe aviso de cuáles están finalizadas, parcialmente finalizadas o sin iniciar.
   - Las tarjetas deben ser claras para un niño de Sexto Primaria, aunque use el calendario para elegir el día.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-02** Cada actividad en Inicio muestra solo el tema y un botón para empezar #socrates #estudiante · 2026-11-14 · Joaquín
   - Quitar «Unos 13 min · Por empezar»: el tiempo no se comunica.
   - Ejemplo: «Polígonos: nombres hasta 10 lados» + «Empezar», nada más.
@@ -39,10 +41,14 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-10** Hacer que el buscador funcione con el contenido y dejar claro para qué sirve #socrates #estudiante · 2026-11-14 · Joaquín
   - Hoy buscar «suma» no devuelve nada: el buscador no está conectado con las lecciones.
   - Rotularlo «¿Qué quieres aprender hoy?».
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-11** Rehacer las tarjetas de materia: propósito claro, menos altura y sin texto sobrante #socrates #estudiante · 2026-11-14 · Joaquín
   - Propuesta: «Matemáticas», una línea («Explora números, figuras y resuelve desafíos»), «160 lecciones» y «Explorar materia».
   - No necesitan ser más grandes ni tener grandes ilustraciones: necesitan sentido.
   - Reducir moderadamente la altura para mostrar más materias sin tanto desplazamiento; equilibrar la última fila con una sola tarjeta con otra sección claramente separada.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-12** Nombrar las materias con el lenguaje del colegio, no con el del CNB: Matemáticas, Inglés, Idioma, Ciencias Naturales… #socrates #estudiante · 2026-11-14 · Joaquín
   - «Segundo idioma» y «Tercer idioma» deben mostrar el idioma concreto si la institución lo tiene configurado.
   - Aplica a todo Sócrates del lado del estudiante.
@@ -57,9 +63,15 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-14** Presentar «Laboratorio de ideas» y «Construcciones» como accesos compactos o una sección de Laboratorios #socrates #estudiante · 2026-11-14 · Joaquín
   - Hoy parecen dos enlaces naranjas informativos entre el buscador y las materias.
   - Mantenerlos en Explorar, con jerarquía propia, sin competir con las materias.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-15** Subir tamaño y contraste de los textos pequeños y tenues #socrates #estudiante · 2026-11-14 · Joaquín
   - Menos texto y tarjetas más claras: lo que importa es que entienda qué materias tiene y qué puede practicar.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-16** Quitar los textos «Hay todo un mundo por descubrir» y «Números, historias, naturaleza… ¿Qué despierta tu curiosidad hoy?» #socrates #estudiante · 2026-11-14 · Joaquín
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-17** Definir dónde vive cada cosa #socrates #estudiante · 2026-11-14 · Joaquín
   - Explorar → Mis materias: tarjetas de materia.
   - Explorar → Mi recorrido: unidades, semanas y actividades que unen varias materias.
@@ -78,6 +90,8 @@ Puntos de mejora para la experiencia del estudiante de Sócrates (niños de Sext
 - [ ] **E-21** Dentro de una materia, mostrar solo el nombre del tema, sin «Matemáticas · Lección N» ni el tiempo #socrates #estudiante · 2026-11-14 · Joaquín
   - Ejemplo: «Figuras congruentes: iguales en forma y tamaño», sin «Lección 5» ni «15 min».
   - Opcional: agrupar por semana, si el docente lo planifica así.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-5-explorar (lote 5, socrates.app PR #45)
 - [ ] **E-22** Las evaluaciones solo aparecen cuando el docente crea una evaluación en su experiencia #socrates #estudiante · 2026-11-14 · Joaquín
 - [ ] **E-23** Quitar de todo el lado del estudiante la narrativa y nomenclatura del CNB #socrates #estudiante · 2026-11-14 · Joaquín
   - El CNB es la base, pero Sócrates debe poder escalar a otros países de Centroamérica; no debe percibirse limitado a Guatemala.
