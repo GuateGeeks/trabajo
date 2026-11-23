@@ -61,8 +61,14 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 - [ ] **S-11** Reorganizar Estudiantes por clase construida, no por grado #socrates #docente · 2026-11-14 · Joaquín
   - Hoy, para ver a sus estudiantes, el docente debe entrar a «Códigos personales · Sexto Primaria A — Para entrar desde otro dispositivo, sin correo».
   - El docente debe poder quitar de su clase a un estudiante que ingresó y no le pertenece.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-9-estudiantes (lote 9, socrates.app PR #43)
+  - Revisar en pruebas: sección «Lote 9» de la propuesta.
 - [ ] **S-12** Reorganizar cómo se comunican los estudiantes y sus códigos, con opción de cambiar el código y, si hace falta, eliminar el perfil #socrates #docente · 2026-11-14 · Joaquín
   - Mantener la sección de imprimir tarjeta: funciona muy bien.
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-9-estudiantes (lote 9, socrates.app PR #43)
+  - Revisar en pruebas: sección «Lote 9» de la propuesta.
 
 ## Progreso
 

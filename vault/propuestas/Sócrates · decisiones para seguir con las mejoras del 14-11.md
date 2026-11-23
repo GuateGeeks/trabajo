@@ -10,7 +10,7 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S
 ## Cómo revisar
 
 - Sitio: https://socrates-pruebas.web.app. Es un Sócrates aparte, con una escuela ficticia («Escuela de Pruebas Sócrates»): nada de lo que hagas ahí toca a la escuela real.
-- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16-lote-4` (S-16 ampliado y lote 4 sobre `main`, que ya tiene los lotes 1 y 2).
+- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16-lotes-4-9` (S-16 ampliado, lote 4 y lote 9 sobre `main`, que ya tiene los lotes 1 y 2).
 - Como docente: en «Soy docente o parte del equipo escolar», «Recuperar contraseña» con tu correo agregando `+docente` antes de la @ (y `+coordinacion` para coordinación). Llega un enlace para definir la contraseña.
 - Como estudiante: «Entrar con mi código». Los códigos de los 20 estudiantes ficticios te los pasa Alvin por mensaje (no van en este repositorio, que es público).
 - La ayuda de Geeky no está disponible en pruebas.
@@ -44,6 +44,20 @@ Si te convence, agrega `aprobado:` a S-16 en `mejoras/Sócrates · experiencia d
 4. **Pendiente:** las semanas de evaluación (10, 20, 30 y 40) todavía se titulan «Evaluación: Comunicación y Lenguaje», etc. Se cambian con el lote 3, porque son lecciones ya publicadas.
 
 Si te convence, agrega `aprobado:` a S-07, E-12, E-13 y E-23. Detalle técnico: socrates.app PR #42.
+
+## Lote 9 · qué revisar (estudiantes del docente)
+
+Con la cuenta +docente, en «Estudiantes»:
+
+1. **Por clase:** el filtro dice «Clase» (Sexto Primaria · Sección A), no grado. Cada estudiante muestra su código. «Imprimir tarjetas» sigue igual.
+2. **Ocultar códigos:** el botón esconde todos los códigos (también en las tarjetas) para proyectar la pantalla; «Mostrar códigos» los vuelve a mostrar.
+3. **Quitar de la clase:** abre un estudiante y usa «Quitar de la clase». Pasa a «Estudiantes quitados» y su historial se conserva. «Restaurar» lo devuelve con su mismo código y recibe lo que siga abierto.
+4. **Eliminar perfil:** su código deja de funcionar y sale de todas sus clases. «Restaurar» lo devuelve a esta clase.
+5. **Quien entró por error:** si quitas a un estudiante de Sexto A, puede entrar a Sexto B con el código de clase de B.
+
+Decisión para ti: hoy cualquier docente asignado a la clase, aunque dé una sola materia, puede quitar estudiantes. ¿Está bien o solo el docente principal o coordinación?
+
+Si te convence, agrega `aprobado:` a S-11 y S-12. Detalle técnico: socrates.app PR #43.
 
 ## Las 13 preguntas
 
@@ -93,7 +107,7 @@ Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» 
 | 6 · Reproductor | E-07, E-08, E-09 | pregunta 8 |
 | 7 · Navegación del estudiante | E-03, E-17, E-22 | pregunta 9 |
 | 8 · Ingreso docente | S-03, S-05, S-06 (espera) | pregunta 10 |
-| 9 · Estudiantes del docente | S-11, S-12 | pregunta 11 |
+| 9 · Estudiantes del docente | S-11, S-12 | trabajado 22-11 (PR #43); espera tu revisión en pruebas |
 | 10 · Asignar práctica | S-13, S-14 | pregunta 12 |
 | 11 · Color por clase | S-08 | pregunta 13 |
 | Más adelante | S-09, S-10, S-15, idioma por institución | — |
