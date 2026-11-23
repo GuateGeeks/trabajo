@@ -78,6 +78,9 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
 - [ ] **S-13** Reducir el texto de Progreso: información concisa, por materia y por habilidades a reforzar #socrates #docente · 2026-11-14 · Joaquín
   - Hoy hay demasiado contenido y estresa: el docente no puede convertirlo en trabajo para asignar.
   - Definir qué se le comunica al docente para que lo aplique y apoye al estudiante.
+  - trabajado: 2026-11-23 Claude
+  - rama: claude/lote-10-progreso (lote 10, socrates.app PR #46)
+  - Revisar en pruebas: sección «Lote 10» de la propuesta.
 
 ## Intervenciones
 
@@ -85,6 +88,9 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
   - Hoy solo muestra el título.
   - Mostrar las actividades como en Planificación, para reasignar trabajo fácil y rápido.
   - Confirmar con Joaquín: en el mensaje se pegó el texto «3. Calendario · Clase compartida (opcional) · Sin clase vinculada · Vincular no cambia la clase…», que parece ser la pantalla de referencia.
+  - trabajado: 2026-11-23 Claude
+  - rama: claude/lote-10-progreso (lote 10, socrates.app PR #46)
+  - Revisar en pruebas: sección «Lote 10» de la propuesta.
 
 ## Evaluación
 

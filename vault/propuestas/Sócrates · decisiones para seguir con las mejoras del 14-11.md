@@ -10,7 +10,7 @@ Joaquín: el lote 1 (S-01, S-02, S-04 y la parte rápida de S-06) y el lote 2 (S
 ## Cómo revisar
 
 - Sitio: https://socrates-pruebas.web.app. Es un Sócrates aparte, con una escuela ficticia («Escuela de Pruebas Sócrates»): nada de lo que hagas ahí toca a la escuela real.
-- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16-lotes-4-5-9-11` (S-16 ampliado y lotes 4, 5, 9 y 11 sobre `main`, que ya tiene los lotes 1 y 2).
+- La franja de arriba dice qué rama y commit estás viendo. Hoy: `pruebas/s16-lotes-4-5-9-10-11` (S-16 ampliado y lotes 4, 5, 9, 10 y 11 sobre `main`, que ya tiene los lotes 1 y 2).
 - Como docente: en «Soy docente o parte del equipo escolar», «Recuperar contraseña» con tu correo agregando `+docente` antes de la @ (y `+coordinacion` para coordinación). Llega un enlace para definir la contraseña.
 - Como estudiante: «Entrar con mi código». Los códigos de los 20 estudiantes ficticios te los pasa Alvin por mensaje (no van en este repositorio, que es público).
 - La ayuda de Geeky no está disponible en pruebas.
@@ -75,6 +75,17 @@ Con la cuenta +docente: cada clase tiene un color tenue y siempre el mismo (Sext
 
 Si te convencen, agrega `aprobado:` a E-01, E-10, E-11, E-14, E-15, E-16, E-21 y S-08. Detalle técnico: socrates.app PR #45 (lote 5) y PR #44 (lote 11).
 
+## Lote 10 · qué revisar (Progreso e Intervenciones)
+
+Con la cuenta +docente:
+
+1. **Progreso:** arriba solo «Por materia» y «Habilidades a reforzar» (los indicadores del CNB con más estudiantes en proceso). Lo demás está en «Ver detalle del grupo».
+2. **Asignar práctica:** en una habilidad, «Asignar práctica» propone lecciones de esa habilidad y marca a los estudiantes en proceso. Al confirmar, la práctica le aparece al estudiante como tarea aparte, aunque ya haya entregado esa lección del plan.
+3. **Intervenciones:** cada intervención muestra la clase vinculada con fecha y hora y sus actividades. En el editor se filtran las clases dadas por fecha.
+4. **Reasignar para practicar:** asigna la actividad solo a los destinatarios de la intervención. Si ya está asignada, lo dice y pide confirmación para asignarla de nuevo.
+
+Si te convence, agrega `aprobado:` a S-13 y S-14. Detalle técnico: socrates.app PR #46.
+
 ## Las 13 preguntas
 
 Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» sigue abierto.
@@ -124,6 +135,6 @@ Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» 
 | 7 · Navegación del estudiante | E-03, E-17, E-22 | pregunta 9 |
 | 8 · Ingreso docente | S-03, S-05, S-06 (espera) | pregunta 10 |
 | 9 · Estudiantes del docente | S-11, S-12 | trabajado 22-11 (PR #43); espera tu revisión en pruebas |
-| 10 · Asignar práctica | S-13, S-14 | pregunta 12 |
+| 10 · Asignar práctica | S-13, S-14 | trabajado 23-11 (PR #46); espera tu revisión en pruebas |
 | 11 · Color por clase | S-08 | trabajado 22-11 (PR #44); espera tu revisión en pruebas |
 | Más adelante | S-09, S-10, S-15, idioma por institución | — |
