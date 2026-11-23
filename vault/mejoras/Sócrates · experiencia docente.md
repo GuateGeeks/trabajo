@@ -50,6 +50,9 @@ Puntos de mejora para la sección «Soy docente o parte del equipo escolar» de 
   - rama: claude/lote-4-nombres (lote 4)
   - Nombres: Idioma Materno, Segundo Idioma, Idioma Extranjero, Matemáticas, Ciencias Naturales, Ciencias Sociales, Arte, Educación Física, Productividad y Desarrollo, Formación Ciudadana, Medio Social y Natural (docente y estudiante).
 - [ ] **S-08** En Hoy, usar colores tenues por clase para distinguir cada grado y comunicar mejor #socrates #docente · 2026-11-14 · Joaquín
+  - trabajado: 2026-11-22 Claude
+  - rama: claude/lote-11-color-clase (lote 11, socrates.app PR #44)
+  - Color tenue y estable por clase (grado + sección) en Hoy, Tus clases, Evaluaciones, Planificación, Estudiantes, Progreso e Intervenciones; el nombre siempre va al lado.
 
 ## Planificación
 

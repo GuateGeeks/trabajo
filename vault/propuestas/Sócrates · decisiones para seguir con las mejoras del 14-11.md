@@ -109,5 +109,5 @@ Respuestas de la llamada del 16-11 debajo de cada una. Lo marcado «Pendiente» 
 | 8 · Ingreso docente | S-03, S-05, S-06 (espera) | pregunta 10 |
 | 9 · Estudiantes del docente | S-11, S-12 | trabajado 22-11 (PR #43); espera tu revisión en pruebas |
 | 10 · Asignar práctica | S-13, S-14 | pregunta 12 |
-| 11 · Color por clase | S-08 | pregunta 13 |
+| 11 · Color por clase | S-08 | trabajado 22-11 (PR #44); se publica en pruebas con el lote 5 |
 | Más adelante | S-09, S-10, S-15, idioma por institución | — |
